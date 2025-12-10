@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf7f5;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #c94c4c;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background: #fffaf6;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ====== NAVIGATION ====== */
+header {
+  background-color: #2b4264;
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.hero-image,
+.about-image,
+.food-image,
+.drinks-image,
+.history-image,
+.location-image {
+  display: block;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin: 15px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.hero-image:hover,
+.about-image:hover,
+.food-image:hover,
+.drinks-image:hover,
+.history-image:hover,
+.location-image:hover {
+  transform: scale(1.02);
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 10px auto 20px;
+  text-align: center;
+  color: #555;
+}
+table {
+  width: 65%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th {
+  background-color: #2d3a48;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+  background-color: #fff3f3;
+}
+
+tr:hover {
+  background-color: #ffe6e6;
+}
+
+section div {
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+section div img {
+  width: 55%;
+  max-width: 220px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px;
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  table {
+    width: 90%;
+  }
+
+  .hero-image,
+  .about-image,
+  .food-image,
+  .drinks-image,
+  .history-image,
+  .location-image {
+    width: 90%;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
